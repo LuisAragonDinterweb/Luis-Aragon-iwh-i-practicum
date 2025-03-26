@@ -1,17 +1,17 @@
 extends layout.pug
 
 block content
-  h1 Registros de Mascotas
-  a(href='/update-cobj') Agregar nuevo registro
-  table
-    thead
-      tr
-        th Nombre
-        th Especie
-        th Raza
-    tbody
-      each item in data
+  a(href='/update-cobj') Agregar/Actualizar registro
+  .table-container
+    table
+        thead
         tr
-          td= item.properties.name
-          td= item.properties.species
-          td= item.properties.race
+            th Nombre
+            th Especie
+            th Raza
+        tbody
+        each item in data
+            tr
+            td= item.properties.name
+            td= item.properties.species
+            td= item.properties.race

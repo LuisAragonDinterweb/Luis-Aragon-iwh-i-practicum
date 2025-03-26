@@ -3,10 +3,11 @@ doctype html
 html
   head
     title= title || 'HubSpot Custom Objects'
-    link(rel='stylesheet', href='/styles.css')
+    link(rel="stylesheet" href="/css/style.css")
   body
     header
       h1= title
-    block content
+    .content
+        block content
     footer
       p HubSpot API Practicum
