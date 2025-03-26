@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+  h1 Formulario de objeto personalizado de actualización | Integración con HubSpot I Práctica
+  form(action='/update-cobj', method='POST')
+    div
+      label(for='name') Nombre
+      input(type='text', name='name', required=true)
+    div
+      label(for='species') Especie
+      input(type='text', name='species', required=true)
+    div
+      label(for='race') Raza
+      input(type='text', name='race', required=true)
+    div
+      button(type='submit') Crear/Actualizar Objeto
